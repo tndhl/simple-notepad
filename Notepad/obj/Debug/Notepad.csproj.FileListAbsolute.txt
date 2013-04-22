@@ -1,0 +1,9 @@
+D:\Учеба\Технологии программирования\ИДЗ\Notepad\Notepad\bin\Debug\Notepad.exe.config
+D:\Учеба\Технологии программирования\ИДЗ\Notepad\Notepad\bin\Debug\Notepad.exe
+D:\Учеба\Технологии программирования\ИДЗ\Notepad\Notepad\bin\Debug\Notepad.pdb
+D:\Учеба\Технологии программирования\ИДЗ\Notepad\Notepad\obj\Debug\Notepad.csprojResolveAssemblyReference.cache
+D:\Учеба\Технологии программирования\ИДЗ\Notepad\Notepad\obj\Debug\Notepad.Properties.Resources.resources
+D:\Учеба\Технологии программирования\ИДЗ\Notepad\Notepad\obj\Debug\Notepad.csproj.GenerateResource.Cache
+D:\Учеба\Технологии программирования\ИДЗ\Notepad\Notepad\obj\Debug\Notepad.exe
+D:\Учеба\Технологии программирования\ИДЗ\Notepad\Notepad\obj\Debug\Notepad.pdb
+D:\Учеба\Технологии программирования\ИДЗ\Notepad\Notepad\obj\Debug\Notepad.Notepad.resources
