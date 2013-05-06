@@ -24,6 +24,22 @@ namespace Notepad
 
         private void fileOpen_Click(object sender, EventArgs e)
         {
+            if (editor.FilePath.Length > 0)
+            {
+                if (MessageBox.Show("Сохранить открытый файл?", "Ранее открытый файл", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    if (editor.SaveFile())
+                    {
+                        MessageBox.Show("Файл успешно сохранен.");
+
+                        textBox.Clear();
+                        editor.setPlainText("");
+                        editor.FilePath = "";
+                        editor.FileName = "Новый файл";
+                    }
+                }
+            }
+
             OpenFileDialog openFileDialog = new OpenFileDialog();
 
             openFileDialog.InitialDirectory = "C:\\";
