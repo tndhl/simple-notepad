@@ -97,6 +97,11 @@ namespace Notepad
             editor.FileName = "New file";
 
             statusFilename.Text = editor.FileName;
+        }
+
+        private void fileExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         } 
     }
 }

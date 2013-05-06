@@ -116,6 +116,7 @@
             this.fileExit.Name = "fileExit";
             this.fileExit.Size = new System.Drawing.Size(250, 22);
             this.fileExit.Text = "Выход";
+            this.fileExit.Click += new System.EventHandler(this.fileExit_Click);
             // 
             // справкаToolStripMenuItem
             // 
