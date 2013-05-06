@@ -87,6 +87,7 @@
             this.fileOpen.Size = new System.Drawing.Size(250, 22);
             this.fileOpen.Text = "Открыть...";
             this.fileOpen.ToolTipText = "Открыть существующий файл";
+            this.fileOpen.Click += new System.EventHandler(this.fileOpen_Click);
             // 
             // fileSave
             // 

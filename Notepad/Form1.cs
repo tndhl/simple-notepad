@@ -20,6 +20,24 @@ namespace Notepad
         private void Notepad_Load(object sender, EventArgs e)
         {
             statusFilename.Text = editor.FileName;
+        }
+
+        private void fileOpen_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+
+            openFileDialog.InitialDirectory = "C:\\";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                editor.FileName = openFileDialog.SafeFileName;
+
+                if (editor.OpenFile(openFileDialog.FileName))
+                {
+                    textBox.Text = editor.getPlainText();
+                    statusFilename.Text = editor.FileName;
+                }
+            }
         } 
     }
 }
