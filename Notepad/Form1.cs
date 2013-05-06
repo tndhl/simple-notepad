@@ -19,7 +19,7 @@ namespace Notepad
 
         private void Notepad_Load(object sender, EventArgs e)
         {
-            statusFilename.Text = "Пустой файл";
+            statusFilename.Text = editor.FileName;
         } 
     }
 }

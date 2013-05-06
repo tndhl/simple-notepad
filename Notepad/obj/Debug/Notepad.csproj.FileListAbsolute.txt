@@ -7,3 +7,12 @@ D:\Учеба\Технологии программирования\ИДЗ\Notep
 D:\Учеба\Технологии программирования\ИДЗ\Notepad\Notepad\obj\Debug\Notepad.exe
 D:\Учеба\Технологии программирования\ИДЗ\Notepad\Notepad\obj\Debug\Notepad.pdb
 D:\Учеба\Технологии программирования\ИДЗ\Notepad\Notepad\obj\Debug\Notepad.Notepad.resources
+C:\Users\Alexander\Documents\GitHub\simple-notepad\Notepad\bin\Debug\Notepad.exe.config
+C:\Users\Alexander\Documents\GitHub\simple-notepad\Notepad\obj\Debug\Notepad.exe
+C:\Users\Alexander\Documents\GitHub\simple-notepad\Notepad\obj\Debug\Notepad.pdb
+C:\Users\Alexander\Documents\GitHub\simple-notepad\Notepad\bin\Debug\Notepad.exe
+C:\Users\Alexander\Documents\GitHub\simple-notepad\Notepad\bin\Debug\Notepad.pdb
+C:\Users\Alexander\Documents\GitHub\simple-notepad\Notepad\obj\Debug\Notepad.csprojResolveAssemblyReference.cache
+C:\Users\Alexander\Documents\GitHub\simple-notepad\Notepad\obj\Debug\Notepad.Notepad.resources
+C:\Users\Alexander\Documents\GitHub\simple-notepad\Notepad\obj\Debug\Notepad.Properties.Resources.resources
+C:\Users\Alexander\Documents\GitHub\simple-notepad\Notepad\obj\Debug\Notepad.csproj.GenerateResource.Cache

@@ -198,6 +198,8 @@
         private System.Windows.Forms.RichTextBox textBox;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel statusFilename;
+
+        private Editor editor = new Editor();
     }
 }
 
