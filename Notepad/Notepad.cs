@@ -96,7 +96,7 @@ namespace Notepad
                     throw new Exception("Путь до файла не задан.");
                 }
 
-                FileStream fileStream = new FileStream(m_filePath, FileMode.OpenOrCreate, FileAccess.Write);
+                FileStream fileStream = new FileStream(m_filePath, FileMode.Create, FileAccess.Write);
                 Byte[] text = new UTF8Encoding(true).GetBytes(this.m_plaintext);
 
                 fileStream.Write(text, 0, text.Length);
