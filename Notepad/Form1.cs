@@ -56,7 +56,7 @@ namespace Notepad
                     if (editor.SaveFile())
                     {
                         statusFilename.Text = editor.FileName;
-                        MessageBox.Show("File was successfully saved.");
+                        MessageBox.Show("Файл успешно сохранен.");
                     }
                 }
             }
@@ -64,7 +64,7 @@ namespace Notepad
             {
                 if (editor.SaveFile())
                 {
-                    MessageBox.Show("File was successfully saved.");
+                    MessageBox.Show("Файл успешно сохранен.");
                 }
             }
         }
@@ -84,7 +84,7 @@ namespace Notepad
                 if (editor.SaveFile())
                 {
                     statusFilename.Text = editor.FileName;
-                    MessageBox.Show("File was successfully saved.");
+                    MessageBox.Show("Файл успешно сохранен.");
                 }
             }
         }
@@ -94,7 +94,7 @@ namespace Notepad
             textBox.Clear();
             editor.setPlainText("");
             editor.FilePath = "";
-            editor.FileName = "New file";
+            editor.FileName = "Новый файл";
 
             statusFilename.Text = editor.FileName;
         }
@@ -102,6 +102,12 @@ namespace Notepad
         private void fileExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void aboutBox_Click(object sender, EventArgs e)
+        {
+            AboutBox1 aboutBox = new AboutBox1();
+            aboutBox.ShowDialog();
         } 
     }
 }

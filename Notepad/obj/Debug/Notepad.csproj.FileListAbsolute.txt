@@ -16,3 +16,4 @@ C:\Users\Alexander\Documents\GitHub\simple-notepad\Notepad\obj\Debug\Notepad.csp
 C:\Users\Alexander\Documents\GitHub\simple-notepad\Notepad\obj\Debug\Notepad.Notepad.resources
 C:\Users\Alexander\Documents\GitHub\simple-notepad\Notepad\obj\Debug\Notepad.Properties.Resources.resources
 C:\Users\Alexander\Documents\GitHub\simple-notepad\Notepad\obj\Debug\Notepad.csproj.GenerateResource.Cache
+C:\Users\Alexander\Documents\GitHub\simple-notepad\Notepad\obj\Debug\Notepad.AboutBox1.resources

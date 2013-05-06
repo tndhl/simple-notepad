@@ -7,7 +7,7 @@ namespace Notepad
 {
     class Editor
     {
-        private string m_fileName = "New file";
+        private string m_fileName = "Новый файл";
         private string m_filePath = "";
         private string m_plaintext = "";
 
@@ -75,13 +75,13 @@ namespace Notepad
             }
             catch (UnauthorizedAccessException e)
             {
-                MessageBox.Show("Sorry, but you have not access to this file.");
+                MessageBox.Show("У Вас нет доступа к данному файлу.");
 
                 return false;
             }
             catch (IOException e)
             {
-                MessageBox.Show("Error while opening the file.");
+                MessageBox.Show("Возникла ошибка во время открытия файла.");
 
                 return false;
             }
@@ -93,7 +93,7 @@ namespace Notepad
             {
                 if (this.m_filePath.Length == 0)
                 {
-                    throw new Exception("File path does not set.");
+                    throw new Exception("Путь до файла не задан.");
                 }
 
                 FileStream fileStream = new FileStream(m_filePath, FileMode.OpenOrCreate, FileAccess.Write);

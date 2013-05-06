@@ -36,7 +36,7 @@
             this.fileSaveAs = new System.Windows.Forms.ToolStripMenuItem();
             this.fileExit = new System.Windows.Forms.ToolStripMenuItem();
             this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.оПрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutBox = new System.Windows.Forms.ToolStripMenuItem();
             this.textBox = new System.Windows.Forms.RichTextBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.statusFilename = new System.Windows.Forms.ToolStripStatusLabel();
@@ -121,16 +121,17 @@
             // справкаToolStripMenuItem
             // 
             this.справкаToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.оПрограммеToolStripMenuItem});
+            this.aboutBox});
             this.справкаToolStripMenuItem.Name = "справкаToolStripMenuItem";
             this.справкаToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.справкаToolStripMenuItem.Text = "Справка";
             // 
-            // оПрограммеToolStripMenuItem
+            // aboutBox
             // 
-            this.оПрограммеToolStripMenuItem.Name = "оПрограммеToolStripMenuItem";
-            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
-            this.оПрограммеToolStripMenuItem.Text = "О программе";
+            this.aboutBox.Name = "aboutBox";
+            this.aboutBox.Size = new System.Drawing.Size(152, 22);
+            this.aboutBox.Text = "О программе";
+            this.aboutBox.Click += new System.EventHandler(this.aboutBox_Click);
             // 
             // textBox
             // 
@@ -199,7 +200,7 @@
         private System.Windows.Forms.ToolStripMenuItem fileSaveAs;
         private System.Windows.Forms.ToolStripMenuItem fileExit;
         private System.Windows.Forms.ToolStripMenuItem справкаToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem оПрограммеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aboutBox;
         private System.Windows.Forms.RichTextBox textBox;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel statusFilename;
