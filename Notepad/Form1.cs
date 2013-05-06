@@ -30,12 +30,41 @@ namespace Notepad
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                editor.FileName = openFileDialog.SafeFileName;
-
                 if (editor.OpenFile(openFileDialog.FileName))
                 {
                     textBox.Text = editor.getPlainText();
                     statusFilename.Text = editor.FileName;
+                }
+            }
+        }
+
+        private void fileSave_Click(object sender, EventArgs e)
+        {
+            editor.setPlainText(textBox.Text);
+
+            if (editor.FilePath.Length == 0)
+            {
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+
+                saveFileDialog.InitialDirectory = "C:\\";
+                saveFileDialog.Filter = "All files (*.*)|(*.*)";
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    editor.FilePath = saveFileDialog.FileName;
+
+                    if (editor.SaveFile())
+                    {
+                        statusFilename.Text = editor.FileName;
+                        MessageBox.Show("File was successfully saved.");
+                    }
+                }
+            }
+            else
+            {
+                if (editor.SaveFile())
+                {
+                    MessageBox.Show("File was successfully saved.");
                 }
             }
         } 

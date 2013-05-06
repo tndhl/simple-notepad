@@ -10,7 +10,13 @@ namespace Notepad
         private string m_fileName = "New file";
         private string m_filePath = "";
         private string m_plaintext = "";
-       
+
+        private void UpdateFileName(string path)
+        {
+            string[] fileName = path.Split(new Char[] { '\\' });
+            this.m_fileName = fileName[fileName.Length - 1];
+        }
+
         public string FileName 
         {
             get
@@ -33,7 +39,7 @@ namespace Notepad
 
             set
             {
-                this.FilePath = value;
+                this.m_filePath = value;
             }
         }
 
@@ -42,8 +48,15 @@ namespace Notepad
             return this.m_plaintext;
         }
 
+        public void setPlainText(string text)
+        {
+            this.m_plaintext = text;
+        }
+
         public bool OpenFile(string path)
         {
+            this.UpdateFileName(path);
+            
             try
             {
                 this.m_filePath = path;
@@ -57,6 +70,7 @@ namespace Notepad
                     this.m_plaintext += tmp.GetString(b);
                 }
 
+                fileStream.Close();
                 return true;
             }
             catch (UnauthorizedAccessException e)
@@ -68,6 +82,33 @@ namespace Notepad
             catch (IOException e)
             {
                 MessageBox.Show("Error while opening the file.");
+
+                return false;
+            }
+        }
+
+        public bool SaveFile()
+        {
+            try
+            {
+                if (this.m_filePath.Length == 0)
+                {
+                    throw new Exception("File path does not set.");
+                }
+
+                FileStream fileStream = new FileStream(m_filePath, FileMode.OpenOrCreate, FileAccess.Write);
+                Byte[] text = new UTF8Encoding(true).GetBytes(this.m_plaintext);
+
+                fileStream.Write(text, 0, text.Length);
+
+                fileStream.Close();
+
+                this.UpdateFileName(m_filePath);
+                return true;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
 
                 return false;
             }
