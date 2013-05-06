@@ -78,6 +78,7 @@
             this.fileNew.Size = new System.Drawing.Size(250, 22);
             this.fileNew.Text = "Создать";
             this.fileNew.ToolTipText = " Создать пустой файл";
+            this.fileNew.Click += new System.EventHandler(this.fileNew_Click);
             // 
             // fileOpen
             // 

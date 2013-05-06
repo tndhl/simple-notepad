@@ -87,6 +87,16 @@ namespace Notepad
                     MessageBox.Show("File was successfully saved.");
                 }
             }
+        }
+
+        private void fileNew_Click(object sender, EventArgs e)
+        {
+            textBox.Clear();
+            editor.setPlainText("");
+            editor.FilePath = "";
+            editor.FileName = "New file";
+
+            statusFilename.Text = editor.FileName;
         } 
     }
 }
