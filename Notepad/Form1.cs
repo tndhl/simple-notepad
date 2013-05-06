@@ -67,6 +67,26 @@ namespace Notepad
                     MessageBox.Show("File was successfully saved.");
                 }
             }
+        }
+
+        private void fileSaveAs_Click(object sender, EventArgs e)
+        {
+            editor.setPlainText(textBox.Text);
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+
+            saveFileDialog.InitialDirectory = "C:\\";
+            saveFileDialog.Filter = "All files (*.*)|(*.*)";
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                editor.FilePath = saveFileDialog.FileName;
+
+                if (editor.SaveFile())
+                {
+                    statusFilename.Text = editor.FileName;
+                    MessageBox.Show("File was successfully saved.");
+                }
+            }
         } 
     }
 }

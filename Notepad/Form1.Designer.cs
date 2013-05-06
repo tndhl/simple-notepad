@@ -108,6 +108,7 @@
             this.fileSaveAs.Size = new System.Drawing.Size(250, 22);
             this.fileSaveAs.Text = "Сохранить как...";
             this.fileSaveAs.ToolTipText = "Сохранить информацию в указанный файл";
+            this.fileSaveAs.Click += new System.EventHandler(this.fileSaveAs_Click);
             // 
             // fileExit
             // 
