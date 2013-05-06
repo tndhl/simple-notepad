@@ -129,7 +129,7 @@
             // aboutBox
             // 
             this.aboutBox.Name = "aboutBox";
-            this.aboutBox.Size = new System.Drawing.Size(152, 22);
+            this.aboutBox.Size = new System.Drawing.Size(149, 22);
             this.aboutBox.Text = "О программе";
             this.aboutBox.Click += new System.EventHandler(this.aboutBox_Click);
             // 
@@ -139,9 +139,11 @@
             this.textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox.AutoWordSelection = true;
             this.textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox.EnableAutoDragDrop = true;
-            this.textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox.DetectUrls = false;
+            this.textBox.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.textBox.Location = new System.Drawing.Point(0, 30);
             this.textBox.Margin = new System.Windows.Forms.Padding(3, 6, 3, 3);
             this.textBox.Name = "textBox";
