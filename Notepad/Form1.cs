@@ -107,6 +107,17 @@ namespace Notepad
 
         private void fileNew_Click(object sender, EventArgs e)
         {
+            if (editor.FilePath.Length > 0)
+            {
+                if (MessageBox.Show("Сохранить открытый файл?", "Открытый файл", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    if (editor.SaveFile())
+                    {
+                        MessageBox.Show("Файл успешно сохранен.");
+                    }
+                }
+            }
+
             textBox.Clear();
             editor.setPlainText("");
             editor.FilePath = "";
